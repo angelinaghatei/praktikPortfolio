@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <title>Portfolio – Angelina Ghatei</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div><img src="logo.svg" alt="logo"></div>
+            <ul>
+                <li><a href="#om-mig">Om mig</a></li>
+                <li><a href="#projekter">Projekter</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero sektion -->
+        <section class="hero">
+            <div class="portfolie-titel" aria-hidden="true">
+                <span class="portfolie-lag lag-1">PORTFOLIE</span>
+                <span class="portfolie-lag lag-2">PORTFOLIE</span>
+                <span class="portfolie-lag lag-3">PORTFOLIE</span>
+                <span class="portfolie-aar">.2026</span>
+            </div>
+
+            <div class="hero-foto">
+                <img src="foto.JPG" alt="foto">
+            </div>
+
+            <div class="hero-tekst">
+                <p class="hero-navn">Angelina Ghatei</p>
+                <p class="hero-undertitel">Multimediedesign studerende</p>
+                <a href="#kontakt" class="btn">Kontakt mig</a>
+            </div>
+        </section>
+
+        <!-- Om mig -->
+        <section id="om-mig" class="sektion">
+            <h2>Om mig</h2>
+            <p>Mine interesser, min uddannelse og hvad jeg brænder for inden for
+                multimediedesign.</p>
+        </section>
+
+        <!-- Færdigheder -->
+        <section id="faerdigheder" class="sektion">
+            <h2>Færdigheder</h2>
+            <div class="faerdigheder-grid">
+
+                <div class="cirkel-kort">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="cirkel-baggrund" cx="50" cy="50" r="40" />
+                        <circle class="cirkel-fremgang" cx="50" cy="50" r="40" data-procent="90" />
+                    </svg>
+                    <span class="cirkel-procent">90%</span>
+                    <p>HTML</p>
+                </div>
+
+                <div class="cirkel-kort">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="cirkel-baggrund" cx="50" cy="50" r="40" />
+                        <circle class="cirkel-fremgang" cx="50" cy="50" r="40" data-procent="85" />
+                    </svg>
+                    <span class="cirkel-procent">85%</span>
+                    <p>CSS</p>
+                </div>
+
+                <div class="cirkel-kort">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="cirkel-baggrund" cx="50" cy="50" r="40" />
+                        <circle class="cirkel-fremgang" cx="50" cy="50" r="40" data-procent="70" />
+                    </svg>
+                    <span class="cirkel-procent">70%</span>
+                    <p>JavaScript</p>
+                </div>
+
+
+
+                <div class="cirkel-kort">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="cirkel-baggrund" cx="50" cy="50" r="40" />
+                        <circle class="cirkel-fremgang" cx="50" cy="50" r="40" data-procent="75" />
+                    </svg>
+                    <span class="cirkel-procent">75%</span>
+                    <p>Astro</p>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Projekter -->
+        <section id="projekter" class="sektion">
+            <h2>Projekter</h2>
+            <div class="projekter-grid">
+
+                <div class="kort">
+                    <h3>Tekst</h3>
+                    <p>tekst.
+                    </p>
+                    <span class="tags"><span class="tag">Astro</span><span class="tag">Astro</span></span>
+                    <a href="" target="_blank" class="kort-link">Se projektet →</a>
+                </div>
+
+                <div class="kort">
+                    <h3>Tekst</h3>
+                    <p>tekst.
+                    </p>
+                    <span class="tags"><span class="tag">Astro</span><span class="tag">Astro</span></span>
+                    <a href="" target="_blank" class="kort-link">Se projektet →</a>
+                </div>
+
+                <div class="kort">
+                    <h3>Tekst</h3>
+                    <p>tekst.
+                    </p>
+                    <span class="tags"><span class="tag">Astro</span><span class="tag">Astro</span></span>
+                    <a href="" target="_blank" class="kort-link">Se projektet →</a>
+                </div>
+
+                <div class="kort">
+                    <h3>Tekst</h3>
+                    <p>tekst.
+                    </p>
+                    <span class="tags"><span class="tag">Astro</span><span class="tag">Astro</span></span>
+                    <a href="" target="_blank" class="kort-link">Se projektet →</a>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="kontakt" class="sektion">
+            <h2>Kontakt</h2>
+            <p>Er du interesseret i at give mig en praktikplads? Skriv til mig!</p>
+            <a href="mailto:din@email.dk" class="btn">Send en mail</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Angelina Ghatei</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
