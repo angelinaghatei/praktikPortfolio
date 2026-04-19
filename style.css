@@ -8,11 +8,13 @@
 }
 
 :root {
-  --bg: #0066ff;
+  --white: #ffffff;
   --accent: #f36ec7;
-  --tekst: #000000;
-  --tekst-dæmpet: #000000;
-  --kort-bg: #161b22;
+  --accent-strong: #f80b6a;
+  --accent-light: #ff7eee;
+  --text: #000000;
+  --text-muted: #000000;
+  --card-bg: #161b22;
   --border: #30363d;
 }
 
@@ -23,8 +25,7 @@ html {
 body {
   font-family: "Segoe UI", system-ui, sans-serif;
   background-color: rgb(255, 240, 253);
-
-  color: var(--tekst);
+  color: var(--text);
   line-height: 1.6;
 }
 
@@ -34,7 +35,8 @@ header {
   top: 0;
   width: 100%;
   z-index: 100;
-  background-color: #f36ec7;
+  color: var(--text);
+  background-color: var(--accent);
 }
 
 header img {
@@ -65,14 +67,14 @@ nav ul {
 }
 
 nav a {
-  color: var(--tekst-dæmpet);
+  color: var(--text);
   text-decoration: none;
   font-size: 0.95rem;
   transition: color 0.2s;
 }
 
 nav a:hover {
-  color: var(--tekst);
+  color: var(--text);
 }
 
 /* ===== HERO ===== */
@@ -112,13 +114,13 @@ nav a:hover {
 }
 
 .lag-1 {
-  color: #f80b6a;
+  color: var(--accent-strong);
   top: 0px;
   left: calc(50% - 60px);
 }
 
 .lag-2 {
-  color: #f36ec7;
+  color: var(--accent);
   top: 50px;
   left: calc(50% - 25px);
 }
@@ -169,29 +171,6 @@ nav a:hover {
   line-height: 1.2;
   font-family: "Koulen", sans-serif;
   margin-top: 5px;
-}
-
-.hero-content {
-  max-width: 560px;
-}
-
-.hero-billede {
-  flex-shrink: 0;
-}
-
-.billede-placeholder {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  border: 2px dashed var(--border);
-  background: var(--kort-bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--tekst-dæmpet);
-  font-size: 0.85rem;
-  text-align: center;
-  padding: 1rem;
 }
 
 .hero img {
@@ -261,7 +240,7 @@ h1 span {
 }
 
 .beskrivelse {
-  color: var(--tekst-dæmpet);
+  color: var(--text-muted);
   font-size: 1.1rem;
   margin-bottom: 2rem;
   max-width: 500px;
@@ -301,6 +280,7 @@ h2 {
   margin-bottom: 2rem;
   position: relative;
   display: inline-block;
+  --tekst: #000000;
 }
 
 h2::after {
@@ -308,9 +288,14 @@ h2::after {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--accent);
+  background: var(--accent-light);
   margin-top: 0.5rem;
   border-radius: 2px;
+}
+
+/* ===== SEKTION TEKST ===== */
+.sektion p {
+  max-width: 620px;
 }
 
 /* ===== FÆRDIGHEDER ===== */
@@ -358,12 +343,12 @@ h2::after {
   top: 42px;
   font-size: 1rem;
   font-weight: 700;
-  color: var(--tekst);
+  color: var(--text);
 }
 
 .cirkel-kort p {
   font-size: 0.9rem;
-  color: var(--tekst-dæmpet);
+  color: var(--text-muted);
   margin: 0;
 }
 
@@ -376,8 +361,8 @@ h2::after {
 }
 
 .kort {
-  background: var(--kort-bg);
-  border: 1px solid var(--border);
+  background: var(--card-bg);
+  border: 2px solid var(--border);
   border-radius: 10px;
   padding: 2rem;
   transition:
@@ -387,17 +372,18 @@ h2::after {
 
 .kort:hover {
   border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(243, 110, 199, 0.4);
   transform: translateY(-4px);
 }
 
 .kort h3 {
   font-size: 1.2rem;
   margin-bottom: 0.75rem;
-  color: var(--tekst);
+  color: var(--accent-light);
 }
 
 .kort p {
-  color: var(--tekst-dæmpet);
+  color: var(--white);
   font-size: 0.95rem;
 }
 
@@ -447,14 +433,14 @@ h2::after {
 
 /* Aktiv nav-link */
 nav a.aktiv {
-  color: var(--tekst);
+  color: var(--text);
 }
 
 /* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 2rem;
-  color: var(--tekst-dæmpet);
+  color: var(--text-muted);
   font-size: 0.85rem;
   border-top: 1px solid var(--border);
 }
