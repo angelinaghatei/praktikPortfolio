@@ -280,7 +280,6 @@ h2 {
   margin-bottom: 2rem;
   position: relative;
   display: inline-block;
-  --tekst: #000000;
 }
 
 h2::after {
