@@ -462,7 +462,7 @@ h2::after {
   padding: 0.2rem 0.6rem;
   border-radius: 20px;
   background: rgba(88, 166, 255, 0.1);
-  color: var(--accent);
+  color: var(--accent-strong);
   border: 1px solid rgba(88, 166, 255, 0.3);
 }
 
